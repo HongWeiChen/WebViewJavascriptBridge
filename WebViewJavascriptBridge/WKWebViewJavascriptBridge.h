@@ -21,6 +21,8 @@
 + (void)enableLogging;
 
 - (void)registerHandler:(NSString*)handlerName handler:(WVJBHandler)handler;
+- (void)send:(id)data;
+- (void)send:(id)data responseCallback:(WVJBResponseCallback)responseCallback;
 - (void)callHandler:(NSString*)handlerName;
 - (void)callHandler:(NSString*)handlerName data:(id)data;
 - (void)callHandler:(NSString*)handlerName data:(id)data responseCallback:(WVJBResponseCallback)responseCallback;
